@@ -18,6 +18,7 @@
   "author": "Roberto Rielo",
   "license": "MIT",
   "dependencies": {
+    "element-ui": "^2.13.0",
     "vue-good-table": "^2.18.1"
   },
   "bugs": {
