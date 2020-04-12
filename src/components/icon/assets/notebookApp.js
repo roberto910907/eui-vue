@@ -1,0 +1,1 @@
+export const icon = '<path d="M25 2h-5V0h-2v2h-3V0h-2v2h-3V0H8v2H3v26h22V2zm-2 24H5V4h3v2h2V4h3v2h2V4h3v2h2V4h3v22z"></path><path d="M27 7v23H8v2h21V7z"></path><path class="euiIcon__fillSecondary" d="M8 12h12v2H8zM8 17h12v2H8z"></path><path class="euiIcon__fillSecondary" d="M8 12h12v2H8zM8 17h12v2H8z"></path>';
