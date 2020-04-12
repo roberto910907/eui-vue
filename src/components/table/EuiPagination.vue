@@ -3,7 +3,7 @@
     class="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--alignItemsCenter euiFlexGroup--justifyContentSpaceBetween euiFlexGroup--directionRow euiFlexGroup--responsive">
     <div class="euiFlexItem euiFlexItem--flexGrowZero">
       <div class="euiPagination" role="group">
-        <el-pagination
+        <Pagination
           @current-change="handleCurrentChange"
           @size-change="handleSizeChange"
           @next-click="next"
@@ -14,18 +14,23 @@
           layout="sizes, prev, pager, next, jumper, ->, total, slot"
           :total="total"
         >
-        </el-pagination>
+        </Pagination>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+    import { Pagination } from 'element-ui';
+
     export default {
         props: {
             total: {type: Number},
             pageChanged: {type: Function},
             perPageChanged: {type: Function}
+        },
+        components: {
+            Pagination,
         },
         data() {
             return {
