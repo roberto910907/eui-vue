@@ -1,6 +1,6 @@
 {
   "name": "eui-vue",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "ElasticUI VueJS implementation",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,9 @@
   ],
   "author": "Roberto Rielo",
   "license": "MIT",
+  "dependencies": {
+    "vue-good-table": "^2.18.1"
+  },
   "bugs": {
     "url": "https://github.com/roberto910907/eui-vue/issues"
   },
