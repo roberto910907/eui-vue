@@ -17,7 +17,7 @@ import Utils from './aria-utils';
  *          DOM node to focus when the dialog opens. If not specified, the
  *          first focusable element in the dialog will receive focus.
  */
-let aria = aria || {};
+var aria = aria || {};
 let tabEvent;
 
 aria.Dialog = function(dialog, focusAfterClosed, focusFirst) {

@@ -1,4 +1,4 @@
-let aria = aria || {};
+var aria = aria || {};
 
 aria.Utils = aria.Utils || {};
 
