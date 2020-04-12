@@ -48,9 +48,3 @@
         },
     }
 </script>
-
-<style scoped>
-    .euiCodeBlock.euiCodeBlock--paddingMedium .euiCodeBlock__pre {
-        padding: 0;
-    }
-</style>

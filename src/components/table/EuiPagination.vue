@@ -56,15 +56,17 @@
             },
             setPerPage(perPage) {
                 this.perPage = perPage;
+
                 this.calPageCount();
+
                 this.perPageChanged({currentPerPage: this.perPage});
             },
             calPageCount() {
                 if (this.total > this.perPage) {
                     this.pages = Math.round(this.total / this.perPage);
-                    console.log(this.pages);
                 } else {
                     this.pages = 1;
+
                     this.setPage(0);
                 }
             },
@@ -74,6 +76,6 @@
             handleCurrentChange(val) {
                 this.setPage(val - 1)
             }
-        }
+        },
     }
 </script>

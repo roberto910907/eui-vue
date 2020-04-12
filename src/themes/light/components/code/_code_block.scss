@@ -243,3 +243,7 @@
     text-decoration: underline;
   }
 }
+
+.euiCodeBlock.euiCodeBlock--paddingMedium .euiCodeBlock__pre {
+  padding: 0;
+}
