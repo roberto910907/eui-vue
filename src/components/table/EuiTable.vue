@@ -163,38 +163,3 @@
         }
     }
 </script>
-
-<style>
-  .euiTable th {
-    position: relative;
-  }
-
-  .euiTable th.sortable:before {
-    margin-bottom: -7px;
-    border-top: 5px solid #cfd3e0;
-  }
-
-  .euiTable thead th.sorting-asc:after {
-    border-bottom: 5px solid #409eff;
-  }
-
-  .euiTable thead th.sorting-desc:before {
-    border-top: 5px solid #409eff;
-  }
-
-  .euiTable th.sortable:after {
-    margin-top: -7px;
-    border-bottom: 5px solid #cfd3e0;
-  }
-
-  .euiTable th.sortable:after, .euiTable th.sortable:before {
-    content: "";
-    position: absolute;
-    height: 0;
-    width: 0;
-    right: 7px;
-    top: 50%;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-  }
-</style>
