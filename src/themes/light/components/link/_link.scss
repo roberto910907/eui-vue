@@ -1,0 +1,41 @@
+$textColors: (
+  subdued: $euiColorDarkShade,
+  primary: $euiColorPrimary,
+  secondary: $euiColorSecondary,
+  accent: $euiColorAccent,
+  warning: $euiColorWarning,
+  danger: $euiColorDanger,
+  text: $euiTextColor,
+  ghost: $euiColorGhost,
+);
+
+.euiLink {
+  @include euiLink;
+
+  .euiLink__externalIcon {
+    margin-left: $euiSizeXS;
+  }
+
+  &.euiLink-disabled {
+    text-decoration: none;
+    cursor: default;
+  }
+
+  // Create color modifiers based on the map
+  @each $name, $color in $textColors {
+    &.euiLink--#{$name} {
+      color: $color;
+
+      &:hover {
+        color: darken($color, 10%);
+      }
+
+      &:focus {
+        outline: solid 3px transparentize($color, .9);
+        background-color: transparentize($color, .9);
+      }
+    }
+  }
+}
+
+
